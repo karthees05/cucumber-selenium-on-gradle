@@ -1,4 +1,4 @@
-package cz.najman;
+package com.kar.steps;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;

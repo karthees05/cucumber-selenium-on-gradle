@@ -10,5 +10,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
     testCompile 'info.cukes:cucumber-java8:1.2.5',
             'info.cukes:cucumber-junit:1.2.5'
-    testCompile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '2.53.0'
+    testCompile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '3.141.59'
 }
