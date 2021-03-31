@@ -1,0 +1,14 @@
+products:
+  "ProductA":
+    suite:
+      "SuiteName_A":
+        environment_1: ["A","B","C"]
+        environment_2: ["X","Y","Z"]
+      "SuiteName_B":
+        environment_1: ["E","F","G"]
+        environment_2: ["K","L","M"]
+  "ProductB":
+    suite:
+      "SuiteName_K":
+        environment_1: ["A1","B2","C3"]
+        environment_2: ["X1","Y1","Z1"]
