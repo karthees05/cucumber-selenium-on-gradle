@@ -32,7 +32,12 @@ public class StringReverse {
                 .map(word -> new StringBuilder(word).reverse())
                 .collect(Collectors.joining(" "));
     }
-
+    private static String reverse(String str) {
+        if(str.length() == 0)
+            return "";
+        return str.charAt(str.length() - 1)
+                + reverse(str.substring(0,str.length()-1));
+    }
     @Test
     public void reverseTest() {
         assertThat("Reverse Success", reverseInteger(123) == 321);
@@ -41,6 +46,7 @@ public class StringReverse {
 
         assertThat("Reverse Success", reverseWordCharacters("test").equals("tset"));
         assertThat("Reverse Success", reverseWordCharacters1().equals("tset"));
+        assertThat("Reverse Success", reverse("test").equals("tset"));
 
     }
 }

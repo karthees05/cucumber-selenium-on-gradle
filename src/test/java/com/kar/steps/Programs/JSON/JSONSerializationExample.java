@@ -1,4 +1,4 @@
-package com.kar.steps.Programs;
+package com.kar.steps.Programs.JSON;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
