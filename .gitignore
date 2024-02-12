@@ -1,3 +1,28 @@
 # Default ignored files
 /shelf/
 /.idea/
+*.class
+
+# Package Files #
+*.war
+*.ear
+*.iml
+/.idea
+/venv
+/target
+/log
+/.gradle
+/build
+/usage
+/build/
+/.idea/
+/.gradle/
+/classes/
+
+/*.log/
+# Ignore Gradle project-specific cache directory
+.gradle
+*.log
+# Ignore Gradle build output directory
+build
+target
