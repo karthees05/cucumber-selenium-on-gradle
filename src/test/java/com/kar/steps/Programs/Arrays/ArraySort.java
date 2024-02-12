@@ -1,4 +1,4 @@
-package com.kar.steps.Programs;
+package com.kar.steps.Programs.Arrays;
 
 public class ArraySort {
 
@@ -13,7 +13,7 @@ public class ArraySort {
                 if (arr[i] > arr[j]) {
                     tmp = arr[i];
                     arr[i] = arr[j];
-                    arr[j] =tmp ;
+                    arr[j] = tmp;
                 }
             }
             System.out.println(arr[i]);

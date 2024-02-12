@@ -1,18 +1,19 @@
-package com.kar.steps.Programs;
+package com.kar.steps.Programs.String;
 
 public class StringToInt {
 
     public static void main(String[] args) {
         convert("123");
+        myStringToInteger("123");
     }
 
-    public static int myStringToInteger(String str) {
+    public static void myStringToInteger(String str) {
         int answer = 0, factor = 1;
         for (int i = str.length() - 1; i >= 0; i--) {
             answer += (str.charAt(i) - '0') * factor;
             factor *= 10;
         }
-        return answer;
+        System.out.println(answer);
     }
 
     //    another way

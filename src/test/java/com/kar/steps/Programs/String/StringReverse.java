@@ -1,4 +1,4 @@
-package com.kar.steps.Programs;
+package com.kar.steps.Programs.String;
 
 import org.junit.Test;
 
@@ -15,8 +15,10 @@ public class StringReverse {
 
     private static int reverseInteger(int input) {
         int reverse = 0;
+        int digit = 0;
         while (input != 0) {
-            reverse = reverse * 10 + input % 10;
+            digit = input % 10;
+            reverse = reverse * 10 + digit;
             input = input / 10;
         }
         return reverse;
@@ -32,12 +34,14 @@ public class StringReverse {
                 .map(word -> new StringBuilder(word).reverse())
                 .collect(Collectors.joining(" "));
     }
+
     private static String reverse(String str) {
-        if(str.length() == 0)
+        if (str.length() == 0)
             return "";
         return str.charAt(str.length() - 1)
-                + reverse(str.substring(0,str.length()-1));
+                + reverse(str.substring(0, str.length() - 1));
     }
+
     @Test
     public void reverseTest() {
         assertThat("Reverse Success", reverseInteger(123) == 321);
@@ -48,5 +52,13 @@ public class StringReverse {
         assertThat("Reverse Success", reverseWordCharacters1().equals("tset"));
         assertThat("Reverse Success", reverse("test").equals("tset"));
 
+    }
+
+    public static void main(String[] args) {
+        String str = "Saket Saurav";
+        char[] chars = str.toCharArray();  // converted to character array and printed in reverse order
+        for (int i = chars.length - 1; i >=0; i--) {
+            System.out.print(chars[i]);
+        }
     }
 }

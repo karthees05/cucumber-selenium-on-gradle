@@ -1,8 +1,12 @@
 package com.kar.steps.Programs;
 
 
+import org.junit.Test;
+
 import java.util.HashMap;
 import java.util.Map;
+
+import static org.junit.Assert.assertEquals;
 
 public class GFG
 {

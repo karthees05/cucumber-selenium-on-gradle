@@ -21,6 +21,7 @@ public class KafkaConsumerCheck {
 //            String message =
                 })
         ;
+
 //        checkMessageInKafka(String eventGUID);
     }
 

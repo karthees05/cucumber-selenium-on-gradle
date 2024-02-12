@@ -1,4 +1,4 @@
-package com.kar.steps.Programs;
+package com.kar.steps.Programs.Arrays;
 
 public class SmallestIntegerFromAnArray {
 
